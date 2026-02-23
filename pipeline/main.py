@@ -1,5 +1,8 @@
+from parser.document_parser import convert_documents
+
+
 def main():
-    print("Hello from pipeline!")
+    result = convert_documents(path="./artifacts/")
 
 
 if __name__ == "__main__":
