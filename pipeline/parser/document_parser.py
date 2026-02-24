@@ -3,6 +3,9 @@ from docling.document_converter import DocumentConverter
 
 def convert_documents(path: str):
     converter = DocumentConverter()
-    result = converter.convert_all(source=path)
-    
+    result = converter.convert_all(
+        source=path,
+        raises_on_error=False,
+    )
+
     return result
