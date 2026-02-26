@@ -1,4 +1,4 @@
-from parser.document_parser import convert_documents
+from ingestion.document_parser import convert_documents
 from config.configs import ARTIFACTS_PATH
 
 
