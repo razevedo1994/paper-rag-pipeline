@@ -1,19 +1,10 @@
 from parser.document_parser import convert_documents
-from pathlib import Path
+from config.configs import ARTIFACTS_PATH
 
 
 def main():
-    data_folder = Path(__file__).parent / "artifacts"
 
-    input_doc_paths = [
-        data_folder / "2602.17831v1.pdf",
-        data_folder / "2602.17831v1.pdf",
-        data_folder / "2602.18230v1.pdf",
-        data_folder / "2602.18372v1.pdf",
-        data_folder / "2602.18374v1.pdf",
-    ]
-
-    result = convert_documents(path=input_doc_paths)
+    result = convert_documents(path=ARTIFACTS_PATH)
 
     for document in result:
         print(document.status)
