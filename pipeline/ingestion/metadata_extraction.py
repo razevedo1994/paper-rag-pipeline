@@ -3,6 +3,9 @@ import textwrap
 from docling.document_converter import ConversionResult
 
 prompt = textwrap.dedent("""\
+Extract metadata from this technical report including title, all authors, 
+affiliation and URLs.
+Use exact text from the document.
 """)
 
 examples = [
